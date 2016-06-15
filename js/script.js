@@ -77,8 +77,8 @@ gen.images_loaded = function () {
 };
 
 gen.fonts_loaded = function(){
-    for(var i = 0; i < gen.fonts.length; i++){
-        var font = gen.fonts[i];
+    for(var i = 0; i < fonts.length; i++){
+        var font = fonts[i];
         $(".font").append("<option style='font-family:" + font + ";'>" + font + "</option>")
     }
     $pre.find("span").text("Fonts & Images Loaded.");
@@ -89,7 +89,8 @@ gen.fonts_loaded = function(){
 };
 
 gen.fontload_failed = function(){
-    $pre.find('span').text("Unable to preload load fonts");
+    $pre.find('span').text("Unable to load some fonts.");
+    setTimeout(gen.fonts_loaded, 1000);
 };
 
 gen.preload_fonts = function(){
