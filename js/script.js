@@ -89,7 +89,7 @@ gen.fonts_loaded = function(){
 };
 
 gen.fontload_failed = function(){
-    $pre.find('span').text("Unable to preload load images");
+    $pre.find('span').text("Unable to preload load fonts");
 };
 
 gen.preload_fonts = function(){
