@@ -1,0 +1,127 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    /*margin: 0;
+    padding:0;*/
+    background: transparent;
+    text-align: center;
+}
+
+canvas {
+    border: solid 1px black;
+}
+
+#content {
+    display: inline-block;
+    position: relative;
+}
+
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    background: rgba(33, 33, 33, 1);
+    color: #CCC;
+}
+
+.preloader span {
+    line-height: 500px;
+}
+
+.showControl{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right:10px;
+    z-index: 1000;
+    border: solid 1px black;
+    height: 25px;
+    outline: none;
+    background: #ccc;
+    -webkit-transition: background 500ms;
+    -moz-transition: background 500ms;
+    -ms-transition: background 500ms;
+    -o-transition: background 500ms;
+    transition: background 500ms;
+    cursor: pointer;
+}
+
+.showControl:hover{
+    background: #888;
+}
+
+.control{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    background: rgba(33, 33, 33, 0.95);
+    color: #CCC;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.control input{
+    background: #111;
+    color: #FFF;
+    border: solid 1px #5f5b61;
+    padding: 5px;
+    width: calc(100% - 13px);
+    outline: none;
+    display: block;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.control select{
+    display: block;
+    padding: 5px;
+    width: 100%;
+    font-size: 20px;
+    background: #111;
+    margin-top: 5px;
+    color: #a7a7a7;
+    border: solid 1px #5f5b61;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.types{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.types img{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border: solid 1px transparent;
+}
+
+.types img.selected{
+    border-color: white;
+}
+
+.download{
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    right:10px;
+    border: solid 1px black;
+    outline: none;
+    background: #ccc;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.download:hover{
+    background: #888;
+}
