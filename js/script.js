@@ -126,6 +126,7 @@ gen.update_lines = function(){
 };
 
 gen.draw = function () {
+    gen.settings.color = $color_pick.spectrum("get").toHexString().toUpperCase();
     gen.update_lines();
     gen.ctx.clearRect(0, 0, gen.canvas.width, gen.canvas.height);
     gen.draw_background();
@@ -211,7 +212,6 @@ $cb.on('click', function(){
         $con.fadeIn();
     }
     gen.draw();
-    gen.settings.color = $color_pick.spectrum("get").toHexString().toUpperCase();
 });
 $(".types img").on('click', function(){
     $('.types img').each(function(i, v){ $(v).removeClass("selected"); });
