@@ -54,10 +54,7 @@ canvas {
 }
 
 .control{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
     height: 500px;
     width: 500px;
     text-align: center;
@@ -113,13 +110,14 @@ canvas {
 .download{
     display: none;
     position: absolute;
-    bottom: 20px;
+    top: 10px;
     right:10px;
     border: solid 1px black;
     outline: none;
     background: #ccc;
     z-index: 10;
     cursor: pointer;
+    padding: 10px;
 }
 
 .download:hover{
